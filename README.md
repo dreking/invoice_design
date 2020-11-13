@@ -1,16 +1,18 @@
-# invoice_design
+# Invoice Design Implementation
 
-A new Flutter project.
+This is a quick hobby design.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a demo design inspiration.
 
-A few resources to get you started if this is your first Flutter project:
+## Prerequisite
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Make sure you have [Flutter](https://flutter.dev) installed on your computer
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# How to run
+
+-   Run `flutter pub get` in your terminal
+-   Then run `flutter run`
+
+![Inspiration Design](https://raw.githubusercontent.com/dreking/invoice_design/main/assets/images/design.png)
