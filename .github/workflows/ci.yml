@@ -1,5 +1,9 @@
 name: CI
 on:
+    push:
+        branches:
+            - main
+
     pull_request:
         branches:
             - main
@@ -35,6 +39,11 @@ jobs:
             - run: flutter pub get
             - run: flutter clean
             - run: flutter build ios --release --no-codesign
+            - name: Upload iPA
+                uses: actions/upload-artifact@main
+                with:
+                    name: ios-build
+                    path: build/ios/iphoneos
 
     build_appbundle:
         name: Build Flutter (Android)
@@ -51,3 +60,8 @@ jobs:
             - run: flutter pub get
             - run: flutter clean
             - run: flutter build appbundle
+            - name: Upload APK
+                uses: actions/upload-artifact@main
+                with:
+                    name: apk-build
+                    path: build/app/outputs/apk/release
