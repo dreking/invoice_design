@@ -3,8 +3,8 @@ import 'package:invoice_design/data/data.dart';
 
 class ProductsWidget extends StatelessWidget {
   const ProductsWidget({
-    Key key,
-    @required this.size,
+    Key? key,
+    required this.size,
   }) : super(key: key);
 
   final Size size;
@@ -30,7 +30,7 @@ class ProductsWidget extends StatelessWidget {
                     children: [
                       Text(product.id.toString()),
                       Image.asset(
-                        product.image,
+                        product.image!,
                         height: 70,
                         width: 70,
                       ),
@@ -38,7 +38,7 @@ class ProductsWidget extends StatelessWidget {
                       Container(
                         width: size.width * 0.2,
                         child: Text(
-                          product.description,
+                          product.description!,
                         ),
                       ),
                       Text('\$ ${product.price}'),

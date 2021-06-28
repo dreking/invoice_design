@@ -6,7 +6,7 @@ import 'package:invoice_design/components/download_button.dart';
 
 class MainScreen extends StatelessWidget {
   static const routeName = '/';
-  const MainScreen({Key key}) : super(key: key);
+  const MainScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

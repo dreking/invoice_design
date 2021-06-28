@@ -3,8 +3,8 @@ import 'package:invoice_design/components/custom_text.dart';
 
 class CustomHeader extends StatelessWidget {
   const CustomHeader({
-    Key key,
-    @required this.size,
+    Key? key,
+    required this.size,
   }) : super(key: key);
 
   final Size size;

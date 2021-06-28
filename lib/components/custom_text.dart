@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CustomTextWidget extends StatelessWidget {
-  final double fontSize;
+  final double? fontSize;
   final String text;
-  final double topPosition;
-  final double bottomPosition;
-  final double rightPosition;
+  final double? topPosition;
+  final double? bottomPosition;
+  final double? rightPosition;
 
   const CustomTextWidget({
-    @required this.text,
+    required this.text,
     this.fontSize,
     this.topPosition,
     this.bottomPosition,
