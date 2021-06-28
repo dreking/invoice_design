@@ -47,7 +47,7 @@ flutter:
     assets:
         - assets/images/burger.png
         - assets/images/invoice.png
-        # - images/a_dot_ham.jpeg
+        - .env
 
     # An image asset can refer to one or more resolution-specific "variants", see
     # https://flutter.dev/assets-and-images/#resolution-aware.
