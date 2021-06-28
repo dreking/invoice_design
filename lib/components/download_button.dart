@@ -10,15 +10,23 @@ class CustomButton extends StatelessWidget {
     return Container(
       width: size.width * 0.9,
       margin: EdgeInsets.symmetric(vertical: 10),
-      child: RaisedButton.icon(
-        padding: EdgeInsets.symmetric(vertical: 15),
+      child: ElevatedButton.icon(
+        style: ButtonStyle(
+          padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+            EdgeInsets.symmetric(vertical: 15),
+          ),
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
+          ),
+          backgroundColor: MaterialStateProperty.all<Color>(
+            Colors.orange.shade300,
+          ),
+        ),
         icon: Icon(Icons.download_sharp),
         label: Text('Download'),
-        color: Colors.orange[300],
         onPressed: () {},
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
       ),
     );
   }
