@@ -13,11 +13,17 @@ class ItemsWidget extends StatelessWidget {
         children: [
           Text('Items:'),
           SizedBox(width: 20),
-          FlatButton.icon(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
+          TextButton.icon(
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+              backgroundColor: MaterialStateProperty.all<Color>(
+                Colors.orange.shade100,
+              ),
             ),
-            color: Colors.orange[100],
             icon: Icon(Icons.add),
             label: Text('Add to cart'),
             onPressed: () {},
